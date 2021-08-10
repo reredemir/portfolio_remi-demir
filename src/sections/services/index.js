@@ -45,7 +45,7 @@ class Services extends React.Component {
               </div>
               <div className="heading">
                 <BaffleText
-                  text="Ce que je fait"
+                  text="Ce que je fais"
                   revealDuration={500}
                   revealDelay={500}
                   parentMethod={this.show}
@@ -74,7 +74,7 @@ class Services extends React.Component {
         <div>
           <Row>
             <Col md={4} className="service">
-              <AnimationContainer delay={200} animation="fadeInLeft fast">
+              <AnimationContainer delay={100} animation="fadeInLeft fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faReact} />
                 </div>
@@ -82,7 +82,7 @@ class Services extends React.Component {
               </AnimationContainer>
             </Col>
             <Col md={4} className="service border-side">
-              <AnimationContainer delay={400} animation="fadeInDown fast">
+              <AnimationContainer delay={200} animation="fadeInDown fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faNodeJs} />
                 </div>
@@ -90,7 +90,7 @@ class Services extends React.Component {
               </AnimationContainer>
             </Col>
             <Col md={4} className="service">
-              <AnimationContainer delay={600} animation="fadeInRight fast">
+              <AnimationContainer delay={300} animation="fadeInRight fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faDatabase} />
                 </div>
@@ -100,7 +100,7 @@ class Services extends React.Component {
           </Row>
           <Row>
             <Col md={4} className="service">
-              <AnimationContainer delay={800} animation="fadeInLeft fast">
+              <AnimationContainer delay={400} animation="fadeInLeft fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faPencilRuler} />
                 </div>
@@ -108,7 +108,7 @@ class Services extends React.Component {
               </AnimationContainer>
             </Col>
             <Col md={4} className="service border-side">
-              <AnimationContainer delay={1000} animation="fadeInUp fast">
+              <AnimationContainer delay={500} animation="fadeInUp fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faVial} />
                 </div>
@@ -116,7 +116,7 @@ class Services extends React.Component {
               </AnimationContainer>
             </Col>
             <Col md={4} className="service">
-              <AnimationContainer delay={1200} animation="fadeInRight fast">
+              <AnimationContainer delay={600} animation="fadeInRight fast">
                 <div className="icon">
                   <FontAwesomeIcon icon={faRulerCombined} />
                 </div>

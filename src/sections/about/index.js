@@ -52,12 +52,12 @@ class Hero extends React.Component {
               <h4>Mes compétences</h4>
             </div>
             <div className="skills-container">
-              <Progress name="ReactJS - Redux" value={90} delay={1100} />
-              <Progress name="Node.js - Express" value={70} delay={1100} />
-              <Progress name="ES6 - HTML5 - CSS3" value={80} delay={1100} />
-              <Progress name="SQL - PostgreSQL" value={60} delay={1100} />
-              <Progress name="MongoDB" value={30} delay={1100} />
-              <Progress name="Anglais" value={90} delay={1100} />
+              <Progress name="ReactJS - Redux" value={90} delay={1000} />
+              <Progress name="Node.js - Express" value={70} delay={1000} />
+              <Progress name="ES6 - HTML5 - CSS3" value={80} delay={1000} />
+              <Progress name="SQL - PostgreSQL" value={60} delay={1000} />
+              <Progress name="MongoDB" value={30} delay={1000} />
+              <Progress name="Anglais" value={90} delay={1000} />
             </div>
           </Col>
         </Row>
