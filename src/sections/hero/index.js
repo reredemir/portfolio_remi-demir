@@ -22,7 +22,7 @@ class Hero extends React.Component {
                 <div className="content-line">Développeur</div>
                 <Typewriter
                   options={{
-                    strings: ['Web', 'React JS', 'Node.js'],
+                    strings: ['Web', 'React', 'Node'],
                     deleteChars: 5,
                     autoStart: true,
                     loop: true,
