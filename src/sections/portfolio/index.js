@@ -16,12 +16,12 @@ class Portfolio extends React.Component {
         items.length > 6
           ? 4
           : items.length > 4
-          ? 3
-          : items.length > 3
-          ? 2
-          : items.length > 1
-          ? 2
-          : 1,
+            ? 3
+            : items.length > 3
+              ? 2
+              : items.length > 1
+                ? 2
+                : 1,
       items: this.props.items,
       showPortfolio: false,
     };
@@ -95,23 +95,27 @@ class Portfolio extends React.Component {
                     src={value.content.frontmatter.image.childImageSharp.fluid.src}
                     alt={value.content.frontmatter.title}
                     style={{
-                      maxHeight: `${
-                        this.context.height *
+                      maxHeight: `${this.context.height *
                         (this.state.col >= 3
                           ? 0.35
                           : this.getItemCount(value.content.frontmatter.category) === 4
-                          ? 0.36
-                          : 1)
-                      }px`,
+                            ? 0.36
+                            : 1)
+                        }px`,
                     }}
                   />
                   <Tilt className="Tilt" options={{ scale: 1, max: 50 }}>
-                    <div className="overlay">
+                    <a
+                      className="overlay"
+                      href={value.content.frontmatter.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span className="title">
                         {value.content.frontmatter.title}
                         <p className="description">{value.content.frontmatter.description}</p>
                       </span>
-                    </div>
+                    </a>
                   </Tilt>
                 </AnimationContainer>
               </div>
@@ -185,6 +189,7 @@ export default (props) => (
                 title
                 category
                 description
+                link
                 image {
                   childImageSharp {
                     fluid(maxWidth: 2000, maxHeight: 2000) {
